@@ -1,0 +1,11 @@
+no = 0
+while no < 10:
+   no = no +1
+   if no == 5:
+      continue
+   if no == 7:
+      break #checking unconditional exit
+   print ('Current No :' ,no)
+
+
+print ("exit")

@@ -1,0 +1,11 @@
+label2:
+for (let y = 0; y <= 5; y++) {
+    console.log(y);
+
+    label1:
+        for (let i = 1; i <= 5; i++) {
+          if (i  == 2) { continue; }
+                    console.log(i);
+          if (i == 4) { break label2; } // checking unconditional jump and labeled jump together
+        }
+}

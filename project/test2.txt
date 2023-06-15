@@ -1,0 +1,29 @@
+main
+{
+int exampleV = 30;
+double y = 45;
+reach dummy(exampleV);
+}
+function integer dummy(exampleV)
+{
+int x = 4;
+boolean b1 = exampleV > x ;
+for(int a = 0; a <= x; a = a + 1)
+{
+y = y +2;
+print: y;
+}
+while(exampleV < 50 && y != 150)
+{
+y = y + 1;
+}
+if(examplV > 100 || y < 60)
+{
+print: "working";
+}
+else
+{
+print: "not working";
+}
+return x;
+}

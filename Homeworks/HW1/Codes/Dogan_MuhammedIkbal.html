@@ -1,0 +1,23 @@
+<script>
+const cars = new Map([["bmw",7100]]); // 1- initialization
+console.log(cars.get("bmw")); // 2- get value for a given key
+cars.set("audi", 5000);// 3- adding new element
+console.log(cars.entries());
+cars.set("vw", 3000);// adding new element
+console.log(cars.entries());
+cars.delete("audi"); // 4- deleting an element
+console.log(cars.entries());
+cars.set("bmw",9999);
+console.log(cars.entries()); // 5- modifying element
+console.log(cars.has("bmw")); // 6- checking existence of a key
+const values = [...cars.values()]; // spreading values into an array
+console.log(values.includes(3000)); // 7- checking if a value exists
+console.log(values.includes(3555));
+
+function foo(mapp){ // 8 - foo function to check entries
+for (const [key, value] of mapp) {
+  console.log(key, value); 
+}
+}
+foo(cars);
+</script>

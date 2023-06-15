@@ -1,0 +1,40 @@
+main
+{
+String wifiname = "bilkentwifi";
+String wifipass = "12345";
+CONNECT_INTERNET(wifiname,wifipass);
+sensor temperature;
+sensor humidity;
+sensor airpressure;
+sensor airquality;
+sensor light;
+sensor soundlevel;
+int soundfrequency;
+READ_TEMPERATURE(temperature);
+READ_HUMIDITY(humidity);
+READ_AIRPRESSURE(airpressure);
+READ_AIRQUALITY(airquality);
+READ_LIGHT(light);
+READ_SOUNDLEVEL(soundlevel,soundfrequency);
+switch1 = true;
+switch2 = false;
+switch3= true;
+switch4 = true;
+switch5 = false;
+switch6 = false;
+switch7 = true;
+switch8 = true;
+switch9 = true;
+switch10 = true;
+int currenttime;
+currenttime = GET_TIME();
+ELAPSED_TIME(currenttime);
+connection c1 = "www.google.com";
+connection c2 = "www.bilkent.edu.tr";
+CONNECT_TO(c1);
+CONNECT_TO(C2);
+int x;
+RECEIVE_INT(c1,x);
+SEND_INT(c2,10);
+#this is a comment line#
+}
